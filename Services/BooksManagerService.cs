@@ -31,7 +31,7 @@ namespace Books.BooksApi.Services
                 return new StatusCodeResult(200);
 
              }
-             catch (Exception ex)
+             catch
              {
                  return new StatusCodeResult(400);
              }
@@ -46,7 +46,7 @@ namespace Books.BooksApi.Services
             {
                 return bookObject;
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
@@ -61,7 +61,7 @@ namespace Books.BooksApi.Services
             {
                 return bookObject;
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
@@ -76,7 +76,7 @@ namespace Books.BooksApi.Services
             {
                 return bookObject;
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
@@ -102,7 +102,7 @@ namespace Books.BooksApi.Services
                 await _ctx.SaveChangesAsync();
                 return new StatusCodeResult(200);
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
@@ -116,7 +116,7 @@ namespace Books.BooksApi.Services
                 await _ctx.SaveChangesAsync();
                 return new StatusCodeResult(200);
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }

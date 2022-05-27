@@ -29,7 +29,7 @@ namespace Books.BooksApi.Services
                 _context.Authors.Remove(author);
                 return new StatusCodeResult(200);
             }
-            catch (Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
@@ -62,7 +62,7 @@ namespace Books.BooksApi.Services
                 await _context.SaveChangesAsync();
                 return new StatusCodeResult(201);
 
-            }catch(Exception ex)
+            }catch
             {
                 return new StatusCodeResult(400);
             }
@@ -76,7 +76,7 @@ namespace Books.BooksApi.Services
                 await _context.SaveChangesAsync();
                 return new StatusCodeResult(200);
             }
-            catch(Exception ex)
+            catch
             {
                 return new StatusCodeResult(400);
             }
